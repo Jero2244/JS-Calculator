@@ -20,20 +20,21 @@
 
   <div class="content flex">
     <div class="calculator">    
-      <p>Bill</p>
-      <input type="text" class="money">
+      <p class="bill">Bill</p>
+      <input type="text" onblur="getVal()"  placeholder="0" class="money">
       <p>Select Tip %</p> 
       <ul  class="flex">
-        <li>5%</li>
-        <li>10%</li>
-        <li>15%</li>
-        <li>25%</li>
-        <li>50%</li>
-        <li class="custom">Custom</li>
+        <li><button  class="button-1">5%</button></li>
+        <li><button class="button-2">10%</button></li>
+        <li><button class="button-3">15%</button></li>
+        <div class="break"></div>
+        <li><button class="button-4">25%</button></li>
+        <li><button class="button-5">50%</button></li>
+        <li><button class="custom">Custom</button></li>
       </ul>
 
        <p>Number of People</p>
-      <input type="text" class="people"> </div>
+      <input type="text" onblur="sum()" placeholder="0" class="people"> </div>
     <div class="result">  
        Tip Amount
     / person
@@ -48,5 +49,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+<script src="script.js"></script>
 </body>
 </html>

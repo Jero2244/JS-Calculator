@@ -5,22 +5,34 @@ html, body{
     font-size: 24px;
 }
 
+*{
+    border-radius: 10px;
+}
+
 .content{
-    background-color: hsl(0, 0%, 100%);
+    background-color: #FFF;
     margin: 0 auto;
-    max-width: 37rem;
-    justify-content: center;
+    max-width: 40rem;
     align-items: stretch;
 }
 .calculator{
     flex: 1;
     margin: 1rem;
 }
-
+.calculator > *{
+    margin: 0.25rem 0%;
+}
+p{
+    font-size: 0.5rem;
+    font-weight: 700;
+    color: hsl(186, 14%, 43%);
+    margin: 1em;
+}
 .result{
     flex: 1;
-    margin: 1rem;
     background-color: hsl(183, 100%, 15%);
+    margin: 1rem;
+
 }
 .input{
     display: block;
@@ -33,28 +45,64 @@ ul{
     margin: 0%;
     padding: 0%;
     list-style: none;
-    gap: 0.75rem;
     flex-wrap: wrap;
+    width: 100%;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
 }
 li{
+    flex: 1;
     display: inline-block;
     background-color: hsl(183, 100%, 15%);
-    padding: 0.25rem 0.85rem;
-    min-width: 3rem;
+    min-width:4rem;
     text-align: center;
 }
 
 .custom{
     background-color:hsl(189, 41%, 97%) ;
+    color: hsl(186, 14%, 43%) ;
 }
 
 .money{
-    background: url(tip-calculator-app-main/images/icon-dollar.svg) no-repeat scroll 7px 5px;
-padding-left:30px;
-height: 1rem;
+    margin-bottom: 1rem;
+    background: url(tip-calculator-app-main/images/icon-dollar.svg) no-repeat scroll 7px 10px;
 }
 .people{
-    background: url(tip-calculator-app-main/images/icon-person.svg) no-repeat scroll 7px 5px;
-padding-left:30px;
-height: 1rem;
+    background: url(tip-calculator-app-main/images/icon-person.svg) no-repeat scroll 7px 10px;
+    margin-bottom: 0%;
+}
+.people, .money{
+    padding-left:30px;
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    
+
+}
+
+button{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 0;
+    font-size: 1rem;
+    padding: 0.25rem 0.85rem;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    color:hsl(189, 41%, 97%) ;
+}
+.break{
+    display: block;
+    flex-basis: 100%;
+    width: 0%;
+}
+
+input{
+    font-family: 'Space Mono', monospace;
+    width: 100%;
+    height: 1.5rem;
+    text-align: right;
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+    ;
 }
