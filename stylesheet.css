@@ -1,4 +1,60 @@
 html, body{
     font-family: 'Space Mono', monospace;
     height: 100%;
+    background:hsl(185, 41%, 84%) ;
+    font-size: 24px;
+}
+
+.content{
+    background-color: hsl(0, 0%, 100%);
+    margin: 0 auto;
+    max-width: 37rem;
+    justify-content: center;
+    align-items: stretch;
+}
+.calculator{
+    flex: 1;
+    margin: 1rem;
+}
+
+.result{
+    flex: 1;
+    margin: 1rem;
+    background-color: hsl(183, 100%, 15%);
+}
+.input{
+    display: block;
+}
+
+.flex{
+    display: flex;
+}
+ul{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+li{
+    display: inline-block;
+    background-color: hsl(183, 100%, 15%);
+    padding: 0.25rem 0.85rem;
+    min-width: 3rem;
+    text-align: center;
+}
+
+.custom{
+    background-color:hsl(189, 41%, 97%) ;
+}
+
+.money{
+    background: url(tip-calculator-app-main/images/icon-dollar.svg) no-repeat scroll 7px 5px;
+padding-left:30px;
+height: 1rem;
+}
+.people{
+    background: url(tip-calculator-app-main/images/icon-person.svg) no-repeat scroll 7px 5px;
+padding-left:30px;
+height: 1rem;
 }
