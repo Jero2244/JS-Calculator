@@ -23,26 +23,32 @@
       <p class="bill">Bill</p>
       <input type="text" onblur="getVal()"  placeholder="0" class="money">
       <p>Select Tip %</p> 
-      <ul  class="flex">
-        <li><button  class="button-1">5%</button></li>
-        <li><button class="button-2">10%</button></li>
-        <li><button class="button-3">15%</button></li>
+      <ul  class="list flex">
+        <li><button  class="button 1">5%</button></li>
+        <li><button class="button 2">10%</button></li>
+        <li><button class="button 3">15%</button></li>
         <div class="break"></div>
-        <li><button class="button-4">25%</button></li>
-        <li><button class="button-5">50%</button></li>
+        <li><button class="button 4">25%</button></li>
+        <li><button class="button 5">50%</button></li>
         <li><button class="custom">Custom</button></li>
       </ul>
 
        <p>Number of People</p>
-      <input type="text" onblur="sum()" placeholder="0" class="people"> </div>
-    <div class="result">  
-       Tip Amount
-    / person
-  
-    Total
-    / person
-  
-    Reset</div>
+      <input type="text" onblur="sum()" placeholder="0" class="people"> 
+  </div>
+
+  <div class="result flex">  
+    <div class="totals">
+      <div class="tips-and-total flex">
+          <div class="tip">Tip Amount <span class="person">/ person</span></div>
+          <span class="number">$0.00</span>
+    </div>
+    <div class="tips-and-total flex">
+      <div class="total">Total <span class="person">/ person</span></div><span class="number">$0.00</span> </div></div>
+    
+    <div ><button class="reset ">reset</button></div>
+    
+  </div>
   </div>
   
   <div class="attribution">

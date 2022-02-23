@@ -22,16 +22,19 @@ html, body{
 .calculator > *{
     margin: 0.25rem 0%;
 }
-p{
+p, .person{
     font-size: 0.5rem;
     font-weight: 700;
     color: hsl(186, 14%, 43%);
     margin: 1em;
 }
 .result{
-    flex: 1;
+    flex: 1 ;
     background-color: hsl(183, 100%, 15%);
     margin: 1rem;
+    padding: 1rem ;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
 .input{
@@ -41,7 +44,7 @@ p{
 .flex{
     display: flex;
 }
-ul{
+.list{
     margin: 0%;
     padding: 0%;
     list-style: none;
@@ -75,8 +78,6 @@ li{
     padding-left:30px;
     background-color: hsl(189, 41%, 97%);
     border: none;
-    
-
 }
 
 button{
@@ -104,5 +105,18 @@ input{
     font-size: 1rem;
     font-weight: 700;
     color: hsl(183, 100%, 15%);
-    ;
+
+}
+.person{
+    display: block;
+    margin: 0;
+}
+.tips-and-total{
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.active{
+    background-color:hsl(172, 67%, 45%) ;
+    color: hsl(183, 100%, 15%);
 }
