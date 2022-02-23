@@ -1,27 +1,18 @@
-// let num;
-// let percentage;
+let num;
+let percentage;
+let result
 
-// function getVal(){
-//     const number = document.querySelector('input').value;
-//     console.log(number)
-//     num = Number(number)
-// }
+function getVal(){
+    const number = document.querySelector('input').value;
+    num = Number(number)
+}
 
-// function sum(){
-//     let result = num + num
-//     console.log(result)
-// }
-// function percentages(){
-//     const btn = document.querySelector('.button-1')
-//     const btncontent = btn.textContent;
-//     percentage = Number(btncontent)
-//     console.log(percentage)
-
-// }
-
-// const btn = document.querySelectorAll('button');
-// btn.onClick = () => console.log('Clicked')
-
+function sum(){
+    const people = Number(document.querySelector('.people').value)
+    result = num*percentage
+    result = result/people
+    console.log(result)
+}
 
 if (document.body.addEventListener){
     document.body.addEventListener('click',yourHandler,false);
@@ -37,7 +28,25 @@ function yourHandler(e){
     {
         show(target)
         target.classList.add('active');
+        let percent = target.textContent
+        switch(percent){
+            case('5%'):
+                percentage = 0.05
+                break;
+            case('10%'):
+                percentage = 0.1;
+                break;
+            case('15%'):
+                percentage = 0.15;
+                break
+            case('25%'):
+                percentage = 0.25;
+                break;
+            case('50%'):
+                percentage = 0.5;
+                break
         
+        }
     }
 }
 
@@ -48,3 +57,5 @@ function show(btn){
     });
     // btn.classList.add('active');
 }
+
+

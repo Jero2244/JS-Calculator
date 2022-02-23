@@ -114,9 +114,27 @@ input{
 .tips-and-total{
     justify-content: space-between;
     margin-bottom: 2rem;
+    color: hsl(189, 41%, 97%);
+    font-size: 0.75rem;
 }
 
 .active{
     background-color:hsl(172, 67%, 45%) ;
     color: hsl(183, 100%, 15%);
+}
+.custom{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.number{
+    color: hsl(172, 67%, 45%);
+    font-size: 1.25rem;
+}
+a{
+    text-decoration: none;
+}
+.reset{
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
 }
