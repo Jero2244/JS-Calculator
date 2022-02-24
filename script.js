@@ -1,6 +1,8 @@
 let num;
 let percentage;
-let result
+let result;
+let people;
+let resultTotal;
 
 function getVal(){
     const number = document.querySelector('input').value;
@@ -8,10 +10,11 @@ function getVal(){
 }
 
 function sum(){
-    const people = Number(document.querySelector('.people').value)
+    people = Number(document.querySelector('.people').value)
     result = num*percentage
-    result = result/people
+    resultTotal = result/people
     console.log(result)
+    amount()
 }
 
 if (document.body.addEventListener){
@@ -58,4 +61,11 @@ function show(btn){
     // btn.classList.add('active');
 }
 
+function amount(){
+    let tipAmount = document.querySelector('.tip-amount')
+    tipAmount.textContent = `$ ${resultTotal}`
+
+    let tipTotal = document.querySelector('.tip-total')
+    tipTotal.textContent = `$ ${result}`
+}
 
